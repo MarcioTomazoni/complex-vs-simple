@@ -3,7 +3,7 @@ describe('Complexity vs. simplicity', () => {
     // Arrange
     cy.visit('./src/index.html')
     cy.get('img[src="./sampleImg.png"]')
-      .should('be.visible')
+      .and('be.visible')
   })
 
   context('Complex', () => {
